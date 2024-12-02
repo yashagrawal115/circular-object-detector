@@ -36,17 +36,17 @@ Features:
 ### API Endpoints
   #### 1. Upload Image
 
-        - URL: /upload
+        URL: /upload
 
-        - Method: POST
+        Method: POST
 
-        - Description: Uploads an image for processing and detects circular objects.
+        Description: Uploads an image for processing and detects circular objects.
 
-        - Request:
+        Request:
 
             curl -X POST -F "image=@path/to/image.png" http://localhost:5000/upload
 
-        - Response (JSON):
+        Response (JSON):
 
 
                   JSON
@@ -148,42 +148,55 @@ Features:
       
       Running Locally:
 
-Start the Flask app:
-Bash
-python main.py
-
-Use the API endpoints described above.
-Running with Docker:
-
-Build the Docker image:
-Bash
-docker build -t circular-object-detector .
-
-Run the container:
-Bash
-docker run -p 5000:5000 circular-object-detector
-
-Access the app at http://localhost:5000.
-Testing
-You can install pytest and run unit tests:
-
-Bash
-pip install pytest
-pytest tests/
+      Start the Flask app:
+      Bash
+      python main.py
+      
+      Use the API endpoints described above.
+      Running with Docker:
+      
+      Build the Docker image:
+      Bash
+      docker build -t circular-object-detector .
+      
+      Run the container:
+      Bash
+      docker run -p 5000:5000 circular-object-detector
+      
+      Access the app at http://localhost:5000.
+      Testing
+      You can install pytest and run unit tests:
+      
+      Bash
+      pip install pytest
+      pytest tests/
 
 ### Project Structure
 circular-object-detector/
 ├── app/
+
 │   ├── main.py        # Entry point for Flask app
+
 │   ├── utils.py        # Image processing utilities
+
 │   └── routes/         # API endpoints
+
 │       ├── upload.py
+
 │       ├── objects.py
+
 │       └── mask.py
+
 │            
+
 ├── uploads/          # Persistent image uploads 
+
 ├── processed/        # Processed masks 
+
 ├── Dockerfile        # Docker configuration
+
 ├── requirements.txt  # Python dependencies
+
 ├── README.md         # Project documentation
+
 └── tests/            # Unit tests
