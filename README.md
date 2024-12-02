@@ -173,19 +173,20 @@ Features:
 
 ### Project Structure
 circular-object-detector/
+
 ├── app/
 
-│   ├── main.py        # Entry point for Flask app
+│           ├── main.py        # Entry point for Flask app
 
-│   ├── utils.py        # Image processing utilities
+│           ├── utils.py        # Image processing utilities
 
-│   └── routes/         # API endpoints
+│           └── routes/         # API endpoints
 
-│       ├── upload.py
+│                     ├── upload.py
 
-│       ├── objects.py
+│                     ├── objects.py
 
-│       └── mask.py
+│                     └── mask.py
 
 │            
 
