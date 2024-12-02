@@ -1,4 +1,4 @@
-Circular Object Detector
+## Circular Object Detector
 This Python-based API detects circular objects in uploaded images.
 
 Features:
