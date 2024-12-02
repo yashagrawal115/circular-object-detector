@@ -36,42 +36,42 @@ Features:
 ### API Endpoints
   #### 1. Upload Image
 
-URL: /upload
+        - URL: /upload
 
-Method: POST
+        - Method: POST
 
-Description: Uploads an image for processing and detects circular objects.
+        - Description: Uploads an image for processing and detects circular objects.
 
-Request:
+        - Request:
 
-curl -X POST -F "image=@path/to/image.png" http://localhost:5000/upload
+            curl -X POST -F "image=@path/to/image.png" http://localhost:5000/upload
 
-Response (JSON):
+        - Response (JSON):
 
 
-JSON
-----
-{
-
-  "image_id": "unique-image-id",
-  
-  "objects": [
-  
-    {
-    
-      "id": "unique-object-id",
-      
-      "bounding_box": [x1, y1, x2, y2],
-      
-      "centroid": [cx, cy],
-      
-      "radius": r
-      
-    }
-    
-  ]
-  
-}
+                  JSON
+                  ----
+                  {
+                  
+                    "image_id": "unique-image-id",
+                    
+                    "objects": [
+                    
+                      {
+                      
+                        "id": "unique-object-id",
+                        
+                        "bounding_box": [x1, y1, x2, y2],
+                        
+                        "centroid": [cx, cy],
+                        
+                        "radius": r
+                        
+                      }
+                      
+                    ]
+                    
+                  }
 
 
   #### 2. List Circular Objects
