@@ -7,7 +7,7 @@ Features:
 - Generates metadata for detected objects (bounding boxes, centroids, radii).
 - Provides a binary mask highlighting detected circles.
 - Modular and scalable design with Docker support.
-- 
+
 ### Installation
   #### Prerequisites:
 
@@ -186,9 +186,7 @@ circular-object-detector/
 
 │                     ├── objects.py
 
-│                     └── mask.py
-
-│            
+│                     └── mask.py       
 
 ├── uploads/          # Persistent image uploads 
 
