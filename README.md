@@ -172,30 +172,30 @@ Features:
       pytest tests/
 
 ### Project Structure
-circular-object-detector/
-
-├── app/
-
-│           ├── main.py        # Entry point for Flask app
-
-│           ├── utils.py        # Image processing utilities
-
-│           └── routes/         # API endpoints
-
-│                     ├── upload.py
-
-│                     ├── objects.py
-
-│                     └── mask.py       
-
-├── uploads/          # Persistent image uploads 
-
-├── processed/        # Processed masks 
-
-├── Dockerfile        # Docker configuration
-
-├── requirements.txt  # Python dependencies
-
-├── README.md         # Project documentation
-
-└── tests/            # Unit tests
+      circular-object-detector/
+      
+      ├── app/
+      
+      │           ├── main.py        # Entry point for Flask app
+      
+      │           ├── utils.py        # Image processing utilities
+      
+      │           └── routes/         # API endpoints
+      
+      │                     ├── upload.py
+      
+      │                     ├── objects.py
+      
+      │                     └── mask.py       
+      
+      ├── uploads/          # Persistent image uploads 
+      
+      ├── processed/        # Processed masks 
+      
+      ├── Dockerfile        # Docker configuration
+      
+      ├── requirements.txt  # Python dependencies
+      
+      ├── README.md         # Project documentation
+      
+      └── tests/            # Unit tests
