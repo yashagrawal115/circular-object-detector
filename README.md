@@ -76,39 +76,61 @@ Features:
 
   #### 2. List Circular Objects
 
-URL: /objects/<image_id>
-Method: GET
-Description: Returns a list of detected circular objects for a given image.
-Request:
-curl -X GET http://localhost:5000/objects/<image_id>
-Response (JSON):
-JSON
-[
-  {
-    "id": "unique-object-id",
-    "bounding_box": [x1, y1, x2, y2],
-    "centroid": [cx, cy],
-    "radius": r
-  }
-]
-Use code with caution.
+        URL: /objects/<image_id>
+        
+        Method: GET
+        
+        Description: Returns a list of detected circular objects for a given image.
+        
+        Request:
+        
+        curl -X GET http://localhost:5000/objects/<image_id>
+        
+        Response (JSON):
 
-3. Get Circular Object Details
+          JSON
+          [
+          
+            {
+            
+              "id": "unique-object-id",
+              
+              "bounding_box": [x1, y1, x2, y2],
+              
+              "centroid": [cx, cy],
+              
+              "radius": r
+              
+            }
+            
+          ]
 
-URL: /objects/<image_id>/<object_id>
-Method: GET
-Description: Retrieves details of a specific circular object.
-Request:
-curl -X GET http://localhost:5000/objects/<image_id>/<object_id>
-Response (JSON):
-JSON
-{
-  "id": "unique-object-id",
-  "bounding_box": [x1, y1, x2, y2],
-  "centroid": [cx, cy],
-  "radius": r
-}
-Use code with caution.
+  #### 3. Get Circular Object Details
+
+          URL: /objects/<image_id>/<object_id>
+          
+          Method: GET
+          
+          Description: Retrieves details of a specific circular object.
+          
+          Request:
+          
+          curl -X GET http://localhost:5000/objects/<image_id>/<object_id>
+          
+          Response (JSON):
+          
+            JSON
+            {
+            
+              "id": "unique-object-id",
+              
+              "bounding_box": [x1, y1, x2, y2],
+              
+              "centroid": [cx, cy],
+              
+              "radius": r
+              
+            }
 
   #### 4. Get Binary Mask
 
